@@ -1,10 +1,48 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+h1,
+h3 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+#light {
+  background-color: yellow;
+  color: rgb(63, 10, 113);
+}
+
+#dark {
+  background-color: purple;
+  color: white;
+}
+
+.switch {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch label {
+  margin: 10px;
+}
+#light .switch label {
+  color: black;
+}
+
+#dark .switch label {
+  color: rgb(255, 217, 224);
 }
 
 @media (prefers-reduced-motion: no-preference) {
